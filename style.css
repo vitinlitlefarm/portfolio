@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #ffffff;
+    height: 100vh;
+    background-color: #121212;
+    position: relative;
+}
+
+/* Página inicial (sem scroll) */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Página sobre */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos comuns */
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #bb86fc;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Elementos específicos */
+.skills {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #bb86fc;
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #bb86fc;
+    border-color: #bb86fc;
+}
+
+.nav-link {
+    color: #bb86fc;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #bb86fc;
+}
+
+.bio-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.content, .container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(18, 18, 18, 0.85); /* Fundo escuro semi-transparente */
+}
